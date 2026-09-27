@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        text-align: center;
+    }
+    section h1 {
+        color: blue;
+    }
+    section h1::after {
+    content: '';
+    display: block;
+    background-color: brown;
+    width: 50px;
+    height: 3px;
+    margin: 5px auto auto auto;
+   
+    }
+    div.main {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;   
+         
+    }
+   
+    .F {
+        flex: 1;
+        padding: 0 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 1px solid #edf2f7;
+        border-top: 4px solid #cbd5e1;
+}
+    .F:hover{
+        transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    border-top: 4px solid #198754;
+    }
+    
+
+</style>
+<body>
+    <section>
+    <h1 class="head">
+        Hello World
+    </h1>
+    <p>
+        This is my first Website.
+    </p>
+    <div class="main">
+    <div class="F">
+    <h4>
+        column 1
+    </h4>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perferendis distinctio est numquam ea, amet necessitatibus laudantium, ratione quas aliquid quaerat doloremque! Sed expedita corporis iusto corrupti laudantium id facilis!
+    </p> </div>
+       <div class="F">
+    
+    <h4>
+        column2
+    </h4>    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perferendis distinctio est numquam ea, amet necessitatibus laudantium, ratione quas aliquid quaerat doloremque! Sed expedita corporis iusto corrupti laudantium id facilis!
+    </p> </div>
+    <div class="F">
+    <h4>
+        column3
+    </h4>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perferendis distinctio est numquam ea, amet necessitatibus laudantium, ratione quas aliquid quaerat doloremque! Sed expedita corporis iusto corrupti laudantium id facilis!
+    </p> </div>
+    </div>
+    </section>
+    
+</body>
+</html>
